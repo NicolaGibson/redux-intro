@@ -22,13 +22,13 @@ class App extends React.Component {
 
   updateFromStore() {
     const { store } = this.props;
-
+    console.log("5.Get updated state from redux store");
     const reduxState = store.getState();
+
     console.log("6. New value of state is XXX");
     this.setState({
       selectedButton: reduxState.selectedButton
     });
-    console.log("5.Get updated state from redux store");
   }
 
   render() {

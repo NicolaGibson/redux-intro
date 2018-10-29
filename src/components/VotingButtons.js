@@ -5,11 +5,11 @@ const buttons = ["Camel", "Duck", "Donut", "Potato", "Mash potato"];
 
 function VotingButtons({ selectedButton, dispatch }) {
   function handleClick(button) {
+    console.log("3.Dispatch new button select action", button);
     dispatch({
       type: "SELECT_BUTTON",
       selectedButton: button
     });
-    console.log("3.Dispatch new button select action");
   }
 
   function onClick(event) {

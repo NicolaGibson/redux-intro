@@ -6,6 +6,6 @@ import selectButton from "./reducers/selectButton";
 import { createStore } from "redux";
 
 const store = createStore(selectButton);
-console.log("1. Create store");
+console.log("1. Create store, store");
 
 ReactDOM.render(<App store={store} />, document.getElementById("root"));

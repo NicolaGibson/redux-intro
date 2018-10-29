@@ -1,7 +1,7 @@
 function selectButton(state = {}, action) {
   switch (action.type) {
     case "SELECT_BUTTON":
-      console.log("4.Update redux state");
+      console.log("4.Update redux state", action);
 
       return {
         selectedButton: action.selectedButton
